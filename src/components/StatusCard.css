@@ -1,0 +1,59 @@
+.StatusCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 5px 35px 18px 20px;
+    white-space: nowrap;
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    line-height: 0.7em;
+}
+
+.StatusCard .statusCard_title {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.StatusCard .statusCard_title svg {
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+}
+
+.StatusCard .statusCard_subtitle {
+    font-size: 16px;
+    color: #475569;
+}
+
+.StatusCard .statusCard_subtitle .subtitle_text {
+    font-weight: bold;
+}
+
+.StatusCard .statusCard_subtitle .barrierStaus .status_icon_open_true svg {
+    color: #1565C0;
+}
+
+.StatusCard .statusCard_subtitle .barrierStaus .status_icon_open_false svg {
+    color: #C62828;
+}
+
+.StatusCard .statusCard_subtitle .waterStatus .status_icon_water {
+    color: #13A6F2;
+}
+
+.StatusCard .statusCard_subtitle .lastControl .control_icon {
+    color: #9E9E9E;
+}
