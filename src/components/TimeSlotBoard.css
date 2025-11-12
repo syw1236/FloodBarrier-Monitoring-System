@@ -1,0 +1,56 @@
+.TimeSlotBoard {
+    margin-top: 35px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-bottom: 40px;
+}
+
+.TimeSlotBoard .timeSlotBoard_status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.TimeSlotBoard .timeSlotBoard_status .timeSlotBoard_img {
+    border-radius: 5px;
+}
+
+.TimeSlotBoard .timeSlotBoard_status .status_string {
+    font-size: 11px;
+    color: #757575;
+}
+
+.TimeSlotBoard .timeSlotBoard_status .status_separator {
+    color: #64748B;
+}
+
+.TimeSlotBoard .timeSlotBoard_timeline {
+    border-radius: 40px;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    background-color: #E0F2FE;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    max-width: 100%;
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+}
+
+.TimeSlotBoard .timeSlotBoard_timeline::-webkit-scrollbar {
+    height: 8px;
+}
+
+.TimeSlotBoard .timeSlotBoard_timeline::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.TimeSlotBoard .timeSlotBoard_timeline .timeline_wrapper {
+    padding: 24px 10px;
+    display: inline-flex;
+    min-width: max-content;
+}
