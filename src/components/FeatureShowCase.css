@@ -1,0 +1,108 @@
+.FeatureShowCase {
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 50px;
+    min-width: 900px;
+    box-sizing: border-box;
+}
+
+.FeatureShowCase svg {
+    bottom: 3px;
+    font-size: 30px;
+}
+
+.FeatureShowCase .feature_wrapper_image {
+    background-color: #F7F9FB;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    min-width: 800px;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_explain {
+    text-align: center;
+    align-items: center;
+    white-space: pre;
+    line-height: 1.8em;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_explain .title {
+    font-size: 25px;
+    color: #3d4958;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_explain .title.image_dashboard_chart_day svg {
+    color: #104FA4;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_explain .title.image_control svg {
+    color: #7D8B94;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_explain .subtitle {
+    font-size: 15px;
+    color: #64748B;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_content {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_content.dashboard_chart_day {
+    width: 100%;
+    overflow: hidden;
+}
+
+.FeatureShowCase .feature_wrapper_image .feature_content.dashboard_chart_day>img,
+.FeatureShowCase .feature_wrapper_image .feature_content.control>img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    border: 3px solid #909eb618;
+}
+
+.FeatureShowCase .feature_wrapper_chart,
+.feature_wrapper_water {
+    background-color: #F7F9FB;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+
+.FeatureShowCase .feature_wrapper_chart .feature_explain,
+.feature_wrapper_water .feature_explain {
+    padding-left: 15px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.FeatureShowCase .feature_wrapper_chart .feature_explain .title,
+.feature_wrapper_water .feature_explain .title {
+    color: #1E293B;
+}
+
+.FeatureShowCase .feature_wrapper_chart .feature_explain .title.chart_dashboard_chart svg {
+    color: #BA0202;
+}
+
+.FeatureShowCase .feature_wrapper_water .feature_explain .title.water_dashboard_day svg {
+    color: #2695E3;
+}
+
+.FeatureShowCase .feature_wrapper_chart .feature_explain .subtitle,
+.feature_wrapper_water .feature_explain .subtitle {
+    color: #64748B;
+    text-decoration: underline;
+}
+
+.FeatureShowCase .feature_wrapper_chart .feature_content {
+    width: 100%;
+}
