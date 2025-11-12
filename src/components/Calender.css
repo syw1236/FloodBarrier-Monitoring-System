@@ -1,0 +1,51 @@
+.Calender {
+    margin: 40px 15px 0 15px;
+    flex: 0 0 auto;
+    min-width: 800px;
+}
+
+.Calender .calender_wrapper {
+    margin: 0 50px;
+    background-color: white;
+    padding: 0 30px 0 30px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.Calender .calender_select_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 5px;
+    gap: 5px;
+    text-align: center;
+}
+
+
+.Calender .calender_select_wrapper .calender_select_year,
+.Calender .calender_select_wrapper .calender_month {
+    align-items: center;
+    white-space: nowrap;
+}
+
+.Calender .calender_select_wrapper .calender_select_year .select {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.Calender .calender_select_wrapper .calender_month {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.Calender .calender_select_wrapper .calender_select_day {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-right: 100px;
+}
