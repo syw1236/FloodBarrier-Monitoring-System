@@ -2,7 +2,7 @@
     display: flex;
     background-color: #F7F9FB;
     flex-direction: column;
-    min-width: 800px;
+    min-width: 900px;
 }
 
 .Control .control_button {
@@ -23,7 +23,7 @@
 .Control .control_threeD .threeD_view {
     flex: 1;
     height: 400px;
-    min-width: 200px;
+    min-width: 300px;
 
     overflow: hidden;
     transition: all 0.6s ease;
