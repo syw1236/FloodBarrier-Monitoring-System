@@ -1,5 +1,5 @@
 import "./Home.css";
-import mainImage from "../assets/main_image.png";
+import mainImage from "/main_image.png";
 import FeatureCard from "../components/FeatureCard";
 import FeatureShowCase from "../components/FeatureShowCase";
 import { MAIN_MESSAGE, FEATURE } from "../utils/constants";
