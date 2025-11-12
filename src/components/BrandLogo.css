@@ -1,0 +1,15 @@
+.BrandLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.BrandLogo img {
+    width: 40px;
+    height: auto;
+}
+
+.BrandLogo .name {
+    color: #757575;
+}
