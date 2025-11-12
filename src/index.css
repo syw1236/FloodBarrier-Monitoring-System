@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0 5%;
+}
+
+svg {
+  vertical-align: middle;
+  position: relative;
+}
