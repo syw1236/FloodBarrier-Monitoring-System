@@ -1,0 +1,36 @@
+.WaterControl {
+    margin: 0 100px 15px 15px;
+    width: 150px;
+}
+
+.WaterControl .threeD_controller {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.WaterControl .threeD_controller .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ccc;
+    outline: none;
+    --thumb-color: #a8d8ff;
+}
+
+.WaterControl .threeD_controller .range_number {
+    display: flex;
+    justify-content: space-between;
+    color: #01579B;
+}
+
+.WaterControl input[type="range"].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--thumb-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
