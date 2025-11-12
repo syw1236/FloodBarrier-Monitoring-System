@@ -1,0 +1,69 @@
+.RequireLogin {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 800px;
+}
+
+.RequireLogin .login_dialog {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 30px;
+    border-radius: 12px;
+    animation: fadeIn 0.4s ease-out;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    height: 300px;
+    white-space: nowrap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.RequireLogin .login_dialog .stop {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #D93025;
+}
+
+.RequireLogin .login_dialog .stop svg {
+    color: #D93025;
+    bottom: 3px;
+    font-size: px;
+}
+
+.RequireLogin .login_dialog .login_warning {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #222;
+}
+
+.login_description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+.RequireLogin .login_dialog .login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
