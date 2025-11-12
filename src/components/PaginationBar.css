@@ -1,0 +1,32 @@
+.Pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.Pagination .pagination_button_pre {
+    color: #757575;
+}
+
+.Pagination .pagination_button_next {
+    color: #1E1E1E;
+}
+
+.Pagination .pagination_button_pre,
+.pagination_button_next {
+    display: inline-flex;
+    border: none;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.Pagination .pagination_date {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    width: 300px;
+    justify-content: space-evenly;
+}
