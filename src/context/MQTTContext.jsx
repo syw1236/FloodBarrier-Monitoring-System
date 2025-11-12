@@ -59,13 +59,10 @@ export const MQTTProvider = ({ children }) => {
     }
 
     const clientId = "reactClient_" + Math.random().toString(16).substr(2, 8);
-    const client = new Client(
-      "wss://uf27178b.ala.dedicated.aws.emqxcloud.com:8084/mqtt",
-      clientId
-    );
+    const client = new Client(import.meta.env.VITE_MQTT_URL, clientId);
     client.connect({
-      userName: "water",
-      password: "water",
+      userName: import.meta.env.VITE_MQTT_USERNAME,
+      password: import.meta.env.VITE_MQTT_PASSWORD,
       useSSL: true,
       onSuccess: () => {
         console.log("Connected to EMQX Cloud");
