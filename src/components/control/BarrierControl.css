@@ -1,0 +1,17 @@
+.BarrierControl {
+    margin: 0 100px 15px 15px;
+    width: 150px;
+}
+
+.BarrierControl .threeD_controller {
+    gap: 10px;
+    width: 100%;
+}
+
+.BarrierControl .threeD_controller .controller_onoff {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
