@@ -1,0 +1,19 @@
+.Login {
+    width: 300px;
+}
+
+.Login .login_container {
+    display: flex;
+    align-items: center;
+    gap: 8.7px;
+}
+
+.Login .login_user_name {
+    font-size: 12px;
+}
+
+.Login .logout_container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
