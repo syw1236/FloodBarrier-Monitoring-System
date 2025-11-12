@@ -45,7 +45,7 @@ export const FEATURE = [{
         title: " 원격 제어",
         subtitle: "원격으로 물막이판을 제어합니다.",
         explain: "3D 모델을 통해 물막이판의 상태를 실시간으로 확인하고, 버튼을 눌러 원격으로 제어할 수 있습니다.",
-        image: ["src/assets/barrier.png", "src/assets/water.png"],
+        image: ["src/assets/control_barrier.png", "src/assets/control_water.png"],
         subType: "control",
         svg: "setting",
         type: "image",
