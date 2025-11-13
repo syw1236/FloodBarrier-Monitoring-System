@@ -21,15 +21,20 @@ function App() {
   useEffect(() => {
     const storedWaterData = localStorage.getItem("waterThreshold");
     if (storedWaterData) setWaterThreshold(JSON.parse(storedWaterData));
+    const storedLogin = localStorage.getItem("login");
+    if (storedLogin) setIsLogin(JSON.parse(storedLogin));
   }, []);
 
   useEffect(() => {
     localStorage.setItem("waterThreshold", waterThreshold);
   }, [waterThreshold]);
 
+  useEffect(() => {
+    localStorage.setItem("login", isLogin);
+  }, [isLogin]);
+
   const onClickLogin = () => {
     setIsLogin(!isLogin);
-    console.log(`login: ${isLogin}`);
   };
 
   return (
