@@ -30,8 +30,13 @@ const Control = () => {
   useEffect(() => {
     const storedOpenData = localStorage.getItem("open");
     const storedAutoData = localStorage.getItem("auto");
+    const storedLastControlTime = localStorage.getItem("lastControl");
     if (storedOpenData) setIsOpen(JSON.parse(storedOpenData));
     if (storedAutoData) setIsAutomaticControl(JSON.parse(storedAutoData));
+    if (storedLastControlTime) {
+      const parsed = new Date(storedLastControlTime);
+      if (!isNaN(parsed.getTime())) setLastControlTime(parsed);
+    }
   }, []);
 
   useEffect(() => {
@@ -40,6 +45,11 @@ const Control = () => {
   useEffect(() => {
     localStorage.setItem("open", isOpen);
   }, [isOpen]);
+  useEffect(() => {
+    if (!lastControlTime) return;
+    if (lastControlTime instanceof Date && !isNaN(lastControlTime.getTime()))
+      localStorage.setItem("lastControl", lastControlTime.toISOString());
+  }, [lastControlTime]);
 
   useEffect(() => {
     if (!isAutomaticControl) return;
