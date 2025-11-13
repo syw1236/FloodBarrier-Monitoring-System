@@ -7,6 +7,7 @@ import { toTwoDigits } from "../utils/dateUtils";
 import { GiOpenGate, GiClosedDoors } from "react-icons/gi";
 import { IoIosWater } from "react-icons/io";
 import { IoTime } from "react-icons/io5";
+
 const StatusCard = () => {
   const waterThreshold = useContext(WaterThresholdContext);
   const isOpen = useContext(OpenContext);
