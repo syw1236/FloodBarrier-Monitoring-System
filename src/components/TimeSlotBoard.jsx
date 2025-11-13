@@ -8,10 +8,26 @@ import TimeSlotCard from "./TimeSlotCard";
 
 const TimeSlotBoard = () => {
   const { date } = useContext(DatesContext);
-  const { statusByBlock } = useContext(MQTTContext);
+  const { statusByBlock, setStatusByBlock } = useContext(MQTTContext);
   const key = `${date.year}-${toTwoDigits(date.month)}-${toTwoDigits(
     date.day
   )}`;
+
+  if (!statusByBlock[key]) {
+    setStatusByBlock((prev) => ({
+      ...prev,
+      [key]: {
+        "00-03": false,
+        "03-06": false,
+        "06-09": false,
+        "09-12": false,
+        "12-15": false,
+        "15-18": false,
+        "18-21": false,
+        "21-24": false,
+      },
+    }));
+  }
 
   return (
     <div className="TimeSlotBoard">
@@ -25,7 +41,7 @@ const TimeSlotBoard = () => {
 
       <div className="timeSlotBoard_timeline">
         <div className="timeline_wrapper">
-          {Object.entries(statusByBlock[key] || {}).map(([time, status]) => {
+          {Object.entries(statusByBlock[key]).map(([time, status]) => {
             const [start, end] = time.split("-");
             return (
               <TimeSlotCard
