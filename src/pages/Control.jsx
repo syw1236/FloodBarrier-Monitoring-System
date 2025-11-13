@@ -46,7 +46,7 @@ const Control = () => {
     localStorage.setItem("open", isOpen);
   }, [isOpen]);
   useEffect(() => {
-    if (!lastControlTime) return;
+    // if (!lastControlTime) return;
     if (lastControlTime instanceof Date && !isNaN(lastControlTime.getTime()))
       localStorage.setItem("lastControl", lastControlTime.toISOString());
   }, [lastControlTime]);

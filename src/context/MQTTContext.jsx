@@ -96,9 +96,6 @@ export const MQTTProvider = ({ children }) => {
         setStatusByBlock((prev) => {
           const dayBlocks = { ...(prev[date] || createEmptyDayBlocks()) };
 
-          if (dayBlocks[block]) return prev;
-          console.log("waterThreshold:", waterThreshold);
-          console.log("value:", value);
           if (Number(value) >= waterThreshold) {
             dayBlocks[block] = true;
           }
@@ -127,7 +124,9 @@ export const MQTTProvider = ({ children }) => {
   }, [statusByBlock]);
 
   return (
-    <MQTTContext.Provider value={{ sensorData, statusByBlock }}>
+    <MQTTContext.Provider
+      value={{ sensorData, statusByBlock, setStatusByBlock }}
+    >
       {children}
     </MQTTContext.Provider>
   );
