@@ -26,6 +26,11 @@ const BarrierControl = () => {
     }
   };
 
+  const onClickButton = (flag) => {
+    setIsOpen(flag);
+    setLastControlTime(new Date());
+  };
+
   return (
     <div className="BarrierControl">
       <div className="threeD_controller">
@@ -33,14 +38,14 @@ const BarrierControl = () => {
           <Button
             disabled={isAutomaticControl}
             onClick={() => {
-              setIsOpen(true);
+              onClickButton(true);
             }}
             text={"열기"}
             type={"threeD_controller_open"}
           />
           <Button
             disabled={isAutomaticControl}
-            onClick={() => setIsOpen(false)}
+            onClick={() => onClickButton(false)}
             text={"닫기"}
             type={"threeD_controller_close"}
           />
