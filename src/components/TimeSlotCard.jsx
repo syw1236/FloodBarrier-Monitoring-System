@@ -6,7 +6,7 @@ const TimeSlotCard = ({ startHour, endHour, status }) => {
       <div className="timeSlotCard_time">{`${startHour} ~ ${endHour}시`}</div>
       <div className="timeSlotCard_status">
         <img className="status_img" src={getOnOffImage(status ? 1 : 0)} />
-        <span>{status ? "열림" : "닫힘"}</span>
+        <span>{status ? "닫힘" : "열림"}</span>
       </div>
     </div>
   );
