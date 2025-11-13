@@ -15,7 +15,7 @@ MQTT 기반 IoT 센서 데이터를 수신하고, 시각화하며, 3D 공간에�
 
 | 카테고리                | 사용 기술                                                |
 | ----------------------- | -------------------------------------------------------- |
-| **Frontend**            | React.js, Vite, JavaScript (ES6+), CSS3                  |
+| **Frontend**            | React.js, Vite, JavaScript (ES6+), CSS3, HTML5           |
 | **Routing & UI**        | React Router DOM, React Icons                            |
 | **State Management**    | React Context API                                        |
 | **3D & Visualization**  | Three.js, @react-three/fiber, @react-three/drei, ECharts |
