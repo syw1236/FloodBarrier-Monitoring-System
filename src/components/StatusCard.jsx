@@ -39,7 +39,7 @@ const StatusCard = () => {
           {lastControlTime
             ? ` ${lastControlTime.getFullYear()}.${toTwoDigits(
                 lastControlTime.getMonth() + 1
-              )}.${toTwoDigits(lastControlTime.getDay())} ${toTwoDigits(
+              )}.${toTwoDigits(lastControlTime.getDate())} ${toTwoDigits(
                 lastControlTime.getHours()
               )}:${toTwoDigits(lastControlTime.getMinutes())}`
             : " 기록 없음"}
