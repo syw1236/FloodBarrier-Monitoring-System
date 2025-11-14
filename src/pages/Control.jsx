@@ -42,9 +42,11 @@ const Control = () => {
   useEffect(() => {
     localStorage.setItem("auto", isAutomaticControl);
   }, [isAutomaticControl]);
+
   useEffect(() => {
     localStorage.setItem("open", isOpen);
   }, [isOpen]);
+
   useEffect(() => {
     if (lastControlTime instanceof Date && !isNaN(lastControlTime.getTime()))
       localStorage.setItem("lastControl", lastControlTime.toISOString());
@@ -52,6 +54,13 @@ const Control = () => {
 
   useEffect(() => {
     if (!isAutomaticControl) return;
+    const hasValidData = TOPICS.some((topic) => {
+      const arr = sensorData[topic];
+      return Array.isArray(arr) && arr.length > 0;
+    });
+
+    if (!hasValidData) return;
+
     const shouldClose = TOPICS.some((topic) => {
       const latestValue =
         sensorData[topic]?.[sensorData[topic].length - 1]?.value || 0;
