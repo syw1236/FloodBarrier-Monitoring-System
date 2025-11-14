@@ -88,11 +88,14 @@ export const MQTTProvider = ({ children }) => {
 
         const key = topic.split("/")[1];
 
-        setSensorData((prev) => ({
-          ...prev,
-          [key]: [...prev[key], { date, time, block, value }].slice(-100),
-        }));
+        setSensorData((prev) => {
+          const newArr = [...prev[key]];
+          newArr.push({ date, time, block, value });
 
+          if (newArr.length > 300) newArr.shift();
+
+          return { ...prev, [key]: newArr };
+        });
         setStatusByBlock((prev) => {
           const dayBlocks = { ...(prev[date] || createEmptyDayBlocks()) };
 
